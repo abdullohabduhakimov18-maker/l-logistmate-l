@@ -23,9 +23,9 @@ export default function Navbar() {
         <div className="flex items-center gap-8">
           <Link
             href="/"
-            className={`font-medium transition ${
+            className={`px-3 py-2 rounded-full transition font-medium ${
               isActive('/')
-                ? 'text-blue-600 border-b-2 border-blue-600'
+                ? 'bg-blue-600 text-white'
                 : 'text-gray-600 hover:text-gray-900'
             }`}
           >
@@ -35,11 +35,26 @@ export default function Navbar() {
             href="/news"
             className={`font-medium transition ${
               isActive('/news')
-                ? 'text-blue-600 border-b-2 border-blue-600'
+                ? 'text-blue-600'
                 : 'text-gray-600 hover:text-gray-900'
             }`}
           >
             News
+          </Link>
+          <Link href="/tests" className="text-gray-600 hover:text-gray-900 font-medium">
+            Tests
+          </Link>
+          <Link href="/dictionary" className="text-gray-600 hover:text-gray-900 font-medium">
+            Dictionary
+          </Link>
+          <Link href="/safety" className="text-gray-600 hover:text-gray-900 font-medium">
+            Safety
+          </Link>
+          <Link href="/tools" className="text-gray-600 hover:text-gray-900 font-medium">
+            Tools
+          </Link>
+          <Link href="/other" className="text-gray-600 hover:text-gray-900 font-medium">
+            Other
           </Link>
         </div>
 

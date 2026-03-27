@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Navbar from '@/components/navbar'
 import NewsCard from '@/components/news-card'
 import NewsHero from '@/components/news-hero'
 import NewsSidebar from '@/components/news-sidebar'
@@ -94,22 +95,7 @@ const categories = [
 export default function NewsPage() {
   return (
     <main className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-blue-600">
-            LogisticsPro
-          </Link>
-          <div className="flex items-center gap-4">
-            <Link href="/" className="text-gray-600 hover:text-gray-900">
-              Home
-            </Link>
-            <Link href="/news" className="text-blue-600 font-semibold">
-              News
-            </Link>
-          </div>
-        </nav>
-      </header>
+      <Navbar />
 
       <NewsHero />
 
